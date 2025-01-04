@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwoLightGraphics</title>
+    <!--<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>--->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/61e55caac6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header-wrapper">
+        <nav>
+            <p><strong><span>N</span>uraini</strong></p>
+            <!--<img src="Images/Tlg logo2.png" class="Logo">--->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <p>Developer.</p>
+                <h1>Hi, i'm <span>Usman</span> <br> Aliyu, From Niger State, Nigeria.</h1>
+            </div>
+        </div>
+    </div>
+    <!-------about---->
+    <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/Abt01.jpeg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hello, I'm Usman Aliyu, CEO of <a href="#" id="popUp">twolightgraphics</a>, and a Civil Engineering student at Federal University of Technology Minna. As a Software Developer and multifaceted creative, I'm passionate about leveraging technology to solve real-world problems. With skills in Web Design, Graphic Design, and Video Animation & Editing, I'm excited to showcase my projects and collaborate with like-minded individuals. Explore my portfolio to see my work, and let's connect for future projects.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web and App Design</span><br>HTML, CSS, JAVASCRIPT, REACT AND PYTHON</li>
+                                <li><span>Graphic Design</span><br>CorelDraw and Photoshop</li>
+                                <li><span>Video Editing and Animation</span><br>Wondershare Filmora</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024-Current</span><br>Software Development Training at Tech4Dev</li>
+                                <li><span>2023-2024</span><br>Advance Financial Literacy Course By German Dev. Co-op.</li>
+                                <li><span>2021-2022</span><br>N-skills Web and App Development Training</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-Current</span><br>Federal University of Technology Minna</li>
+                                <li><span>2014-2020</span><br>Bosso Secondary School Minna</li>
+                                <li><span>2008-2013</span><br>Dr, Yahaya Bawa Primary School Bosso</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------services---->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web and App Design</h2>
+                        <p>Transforming Digital Experience. I design  stunning and user-friendly websites and mobile apps that capture your brand's essence, drive engagement, and boost conversation.</p>
+                        <a href="#" id="popUp">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h2>Graphic Design</h2>
+                        <p>Visualizing Your Brand's Identity. From logos and brochures to business cards and social media graphics, I create captivating visual content that reflects your brand's personality and resonates with your audience.</p>
+                        <a href="#" id="popUp">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <h2>Video editing and animation</h2>
+                        <p>Bringing Your Story to Life. I craft compelling video stories through editing, animation, and motion graphics, helping convey complex messages, showcase products or simply captivate your audience.</p>
+                        <a href="#" id="popUp">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------portfolio----->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/web.jpeg">
+                        <div class="layer">
+                            <h3>E-commerce Website</h3>
+                            <p><i>Shop Effortless Online</i><br>A functional platform for effortlesss product browsing and secure checkout.</p>
+                            <a href="#" id="popUp"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/video.jpeg">
+                        <div class="layer">
+                            <h3>Animated Advert Video</h3>
+                            <p><i>Grabbing Attention</i><br>An engaging animated video ad to convey key messages and drive conversation.</p>
+                            <a href="#" id="popUp"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/app.jpeg">
+                        <div class="layer">
+                            <h3>Online Shoping App</h3>
+                            <p><i>Shopping at Your Fingertips</i><br>A user-friendly mobile app (Android/iOS) for convenient online Shopping featuring intuitive navigation with secure payment gateways.</p>
+                            <a href="#" id="popUp"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" id="popUp" class="btn">See more</a>
+            </div>
+        </div>
+        <!--------contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i><a href="mailto:twolightgraphics@gmail.com">twolightgraphics@gmail.com</a></p>
+                        <p><i class="fa-solid fa-square-phone"></i><a href="tel:+2347062192544">07062192544,</a> <a href="tel:+2347043684471">07043684471</a></p>
+                        <p><i class="fa-solid fa-location-dot"></i>Bosso Minna, Niger State.</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/two_light_graphics/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@usman_nuraini?_t=8seMaa8YQyc&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#" id="popUp"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="wa.me/2347043684471"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                        <a href="ALIYU USMAN CV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" placeholder="Your Message" rows="6" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="Copyright">
+                <p>&copy; 2025 Usman Aliyu by <a href="#" id="popUp">TwoLightGraphics</a> </p>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+             
+            function openmenu(){
+                sidemenu.style.right = "0";
+                sidemenu.classList.add("show-menu");
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+                sidemenu.classList.remove("show-menu");
+            }
+
+        </script>
+
+        <script>
+            document.querySelectorAll("nav ul li a").forEach((link) => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                const href = link.getAttribute("href");
+                closemenu(); // Call closemenu function to hide the menu
+                document.querySelector(href).scrollIntoView({ behavior: "smooth" });
+            });
+        });
+        </script>
+
+        <script>
+            const serviceDivs = document.querySelectorAll('.services-list div');
+            serviceDivs.forEach((div) => {
+                div.addEventListener('touchstart', () => {
+                div.classList.add('active');
+            });
+                div.addEventListener('touchend', () => {
+                div.classList.remove('active');
+            });
+        });
+            const workItems = document.querySelectorAll('.work-list .work');
+            workItems.forEach((work) => {
+                work.addEventListener('touchstart', () => {
+                work.classList.add('active');
+            });
+                work.addEventListener('touchend', () => {
+                work.classList.remove('active');
+            });
+        });
+            const socialIcons = document.querySelectorAll('.social-icons a');
+            const buttons = document.querySelectorAll('.btn.btn2');
+
+            socialIcons.forEach((icon) => {
+                icon.addEventListener('touchstart', () => {
+                icon.classList.add('active');
+            });
+                icon.addEventListener('touchend', () => {
+                icon.classList.remove('active');
+            });
+        });
+
+            buttons.forEach((button) => {
+                button.addEventListener('touchstart', () => {
+                button.classList.add('active');
+            });
+                button.addEventListener('touchend', () => {
+                button.classList.remove('active');
+            });
+        });
+        </script>
+
+        <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyg9VxXoAw6U-RdptCgpfKaSDk7KOV-LiMK3JW4Oktd6Nzp_e6WPxTzpU3aqsu6BVEe/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+        </script>
+
+        <script>
+            document.getElementById('popUp').onclick=function pop(){
+                alert('Sorry. There is no URL attached yet, come back later.')
+            }
+        </script>
+</body>
+</html>
